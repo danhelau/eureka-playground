@@ -1,0 +1,17 @@
+eureka:
+  instance:
+    leaseRenewalIntervalInSeconds: 10
+    preferIpAddress: true
+    virtualHostName: eureka-server
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8769/eureka/
+
+server:
+  port: 8769
+
+spring:
+  application:
+    name: eureka-server

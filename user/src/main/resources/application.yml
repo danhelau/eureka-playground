@@ -1,0 +1,20 @@
+BOOTIFUL:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.AvailabilityFilteringRule
+    ServerListRefreshInterval: 30000
+#    NIWSServerListClassName: com.netflix.niws.loadbalancer.DiscoveryEnabledNIWSServerList
+#    NFLoadBalancerPingClassName: hello.SpringBootPing
+
+eureka:
+  client:
+    registerWithEureka: false
+    serviceUrl:
+      defaultZone: http://localhost:8769/eureka/
+
+spring:
+  application:
+    name: client3
+
+server:
+  port: 8989
+
